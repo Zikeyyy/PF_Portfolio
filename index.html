@@ -35,7 +35,7 @@
       <div class="hero-photo-wrap">
         <div class="photo-ring"></div>
         <!-- Replace 'your-photo.jpg' with your actual photo filename -->
-        <img src="myself2.jpeg" alt="Pathum Fernando" class="hero-photo" id="heroPhoto" />
+        <img src="your-photo.jpg" alt="Pathum Fernando" class="hero-photo" id="heroPhoto" />
         <div class="photo-placeholder" id="photoPlaceholder">
           <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="2"/>
@@ -159,25 +159,25 @@
           <div class="skill-group">
             <p class="skill-label">Cloud &amp; AI</p>
             <div class="skill-tags">
-              <span>Microsoft Azure</span><span>Azure AI</span><span>Azure ML</span><span>Oracle Cloud</span>
+              <span>Microsoft Azure</span><span>Azure Logic Apps</span><span>Azure Functions</span><span>Azure Document Intelligence</span><span>Azure ML</span><span>Copilot Studio</span><span>Oracle Cloud</span>
             </div>
           </div>
           <div class="skill-group">
-            <p class="skill-label">Programming</p>
+            <p class="skill-label">Programming &amp; Data</p>
             <div class="skill-tags">
-              <span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML/CSS</span>
+              <span>Python</span><span>scikit-learn</span><span>pandas</span><span>SQL</span><span>JavaScript</span><span>HTML/CSS</span>
             </div>
           </div>
           <div class="skill-group">
-            <p class="skill-label">Tools &amp; DevOps</p>
+            <p class="skill-label">Integrations &amp; DevOps</p>
             <div class="skill-tags">
-              <span>GitHub Actions</span><span>CI/CD</span><span>Git</span>
+              <span>ServiceNow</span><span>Azure DevOps</span><span>GitHub Actions</span><span>CI/CD</span><span>Postman</span><span>Git</span>
             </div>
           </div>
           <div class="skill-group">
             <p class="skill-label">Domain</p>
             <div class="skill-tags">
-              <span>Product Support</span><span>Data Analysis</span><span>Banking Tech</span><span>CRM</span>
+              <span>Agentic AI</span><span>Product Support</span><span>ML Pipelines</span><span>Banking Tech</span><span>Process Automation</span>
             </div>
           </div>
         </div>
@@ -294,60 +294,63 @@
 
         <div class="project-card reveal featured">
           <div class="project-meta">
-            <span class="project-type">Personal Portfolio</span>
+            <span class="project-type">Featured Project · Azure ML &amp; Automation</span>
             <div class="project-links">
               <a href="https://github.com/zikeyyy" aria-label="GitHub" title="View on GitHub" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
               </a>
-              <a href="https://zikeyyy.github.io/Portfolio_PathumFernando/index.html" aria-label="Live site" title="View live site" target="_blank" rel="noopener">
+            </div>
+          </div>
+          <h3 class="project-title">Credit Card Approval — End-to-End Azure ML Pipeline</h3>
+          <p class="project-desc">
+            Built a fully automated credit card approval pipeline on Azure. A logistic regression 
+            model (trained on a Kaggle dataset with SMOTEN oversampling, WOE/IV feature engineering, 
+            and joblib serialisation) was deployed to an Azure Function App. An 8-step Azure Logic App 
+            orchestrates the entire workflow — from receiving a PDF application via HTTP trigger, 
+            extracting structured data using Azure Document Intelligence, constructing the ML input 
+            payload, calling the prediction endpoint, and returning a HIGH/LOW priority classification. 
+            Achieved 81% accuracy with consistent end-to-end execution times of 13–14 seconds.
+          </p>
+          <div class="project-stack">
+            <span>Python</span><span>scikit-learn</span><span>Azure Logic Apps</span><span>Azure Function App</span><span>Azure Document Intelligence</span><span>Jupyter Notebook</span><span>Postman</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type">In Progress · Agentic AI</span>
+            <div class="project-links">
+            </div>
+          </div>
+          <h3 class="project-title">Agentic Customer Support Solution — Copilot Studio</h3>
+          <p class="project-desc">
+            Building a real-time agentic AI solution for customer product support using Microsoft 
+            Copilot Studio. The agent autonomously handles support queries with deep integrations 
+            into ServiceNow for ticket management and Azure DevOps for engineering escalations — 
+            enabling end-to-end resolution workflows without human handoff.
+          </p>
+          <div class="project-stack">
+            <span>Copilot Studio</span><span>ServiceNow</span><span>Azure DevOps</span><span>Microsoft Azure</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type">Personal Project</span>
+            <div class="project-links">
+              <a href="https://zikeyyy.github.io/PF_Portfolio/" aria-label="Live site" title="View live site" target="_blank" rel="noopener">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
               </a>
             </div>
           </div>
           <h3 class="project-title">Personal Portfolio Website</h3>
           <p class="project-desc">
-            A fully custom-built personal portfolio hosted on GitHub Pages. Designed 
-            to showcase professional experience, certifications, and projects. 
-            Built with pure HTML, CSS, and JavaScript — no frameworks required.
+            Designed and built this portfolio from scratch using pure HTML, CSS, and JavaScript 
+            — no frameworks. Features smooth scroll animations, a responsive mobile layout, 
+            and is hosted on GitHub Pages.
           </p>
           <div class="project-stack">
             <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-type">Cloud / AI</span>
-            <div class="project-links">
-              <a href="https://github.com/zikeyyy" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
-            </div>
-          </div>
-          <h3 class="project-title">Azure AI Exploration</h3>
-          <p class="project-desc">
-            Hands-on experiments with Azure Cognitive Services and Azure Machine 
-            Learning — exploring computer vision, natural language processing, 
-            and model deployment on the Azure platform.
-          </p>
-          <div class="project-stack">
-            <span>Microsoft Azure</span><span>Azure AI</span><span>Python</span>
-          </div>
-        </div>
-
-        <div class="project-card reveal">
-          <div class="project-meta">
-            <span class="project-type">DevOps</span>
-            <div class="project-links">
-              <a href="https://github.com/zikeyyy" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
-            </div>
-          </div>
-          <h3 class="project-title">CI/CD Pipeline Automation</h3>
-          <p class="project-desc">
-            Built automated build, test, and deployment pipelines using GitHub 
-            Actions — streamlining the software delivery lifecycle for personal 
-            and academic projects.
-          </p>
-          <div class="project-stack">
-            <span>GitHub Actions</span><span>CI/CD</span><span>Git</span>
           </div>
         </div>
 
@@ -438,4 +441,4 @@
 
   <script src="script.js"></script>
 </body>
-</html> 
+</html>
