@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pathum Fernando — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ─── NAVIGATION ─────────────────────────────────────────── -->
+  <nav id="navbar">
+    <div class="nav-logo">PF<span class="dot">.</span></div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#qualifications">Qualifications</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact" class="nav-cta">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ─── HERO ───────────────────────────────────────────────── -->
+  <section id="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="hero-content">
+      <div class="hero-photo-wrap">
+        <div class="photo-ring"></div>
+        <!-- Replace 'your-photo.jpg' with your actual photo filename -->
+        <img src="myself2.jpeg" alt="Pathum Fernando" class="hero-photo" id="heroPhoto" />
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="30" r="18" stroke="currentColor" stroke-width="2"/>
+            <path d="M8 72c0-17.673 14.327-32 32-32s32 14.327 32 32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          </svg>
+          <span>Add your photo</span>
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <p class="hero-eyebrow">Hello, I'm</p>
+        <h1 class="hero-name">Pathum Fernando</h1>
+        <p class="hero-title">Software Product Support <span class="sep">·</span> Azure AI Certified</p>
+        <p class="hero-bio">
+          A tech enthusiast with a BSc in Business Information Systems and an HND in 
+          Software Engineering. Certified in Microsoft Azure AI and Oracle Cloud, with 
+          hands-on experience in product support, banking technology, and global leadership. 
+          Based in Kalutara, Sri Lanka.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── QUALIFICATIONS ────────────────────────────────────── -->
+  <section id="qualifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01 / Qualifications</span>
+        <h2 class="section-title">Education &amp; Certifications</h2>
+      </div>
+
+      <div class="cards-grid">
+
+        <div class="card reveal">
+          <div class="card-icon">🎓</div>
+          <div class="card-body">
+            <h3>BSc in Business Information Systems</h3>
+            <p class="card-sub">Cardiff Metropolitan University · Feb 2025 – May 2026</p>
+            <p class="card-desc">
+              Undergraduate degree bridging business strategy with information 
+              systems, software development, and data management.
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">📜</div>
+          <div class="card-body">
+            <h3>HND in Software Engineering</h3>
+            <p class="card-sub">Saegis Campus · Apr 2022 – May 2024</p>
+            <p class="card-desc">
+              Higher National Diploma in Computer Science covering software 
+              engineering principles, systems design, and application development.
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">☁️</div>
+          <div class="card-body">
+            <h3>Microsoft Certified: Azure AI Fundamentals</h3>
+            <p class="card-sub">Microsoft · AI-900</p>
+            <p class="card-desc">
+              Certified in core AI concepts, Azure Cognitive Services, and 
+              Azure Machine Learning fundamentals.
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">🏅</div>
+          <div class="card-body">
+            <h3>Oracle Cloud Platform Data Management 2023</h3>
+            <p class="card-sub">Oracle · Certified Associate</p>
+            <p class="card-desc">
+              Certified in Oracle Cloud data management, database services, 
+              and cloud platform operations.
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">🐍</div>
+          <div class="card-body">
+            <h3>Scientific Computing with Python</h3>
+            <p class="card-sub">freeCodeCamp</p>
+            <p class="card-desc">
+              Certification covering Python fundamentals, data structures, 
+              algorithms, and scientific computing libraries.
+            </p>
+          </div>
+        </div>
+
+        <div class="card reveal">
+          <div class="card-icon">⚙️</div>
+          <div class="card-body">
+            <h3>GitHub Actions — CI/CD Pipelines</h3>
+            <p class="card-sub">Microsoft Press Workshop</p>
+            <p class="card-desc">
+              Hands-on workshop covering automated build, test, and deployment 
+              pipelines using GitHub Actions.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skills -->
+      <div class="skills-block reveal">
+        <h3 class="skills-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <p class="skill-label">Cloud &amp; AI</p>
+            <div class="skill-tags">
+              <span>Microsoft Azure</span><span>Azure AI</span><span>Azure ML</span><span>Oracle Cloud</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="skill-label">Programming</p>
+            <div class="skill-tags">
+              <span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML/CSS</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="skill-label">Tools &amp; DevOps</p>
+            <div class="skill-tags">
+              <span>GitHub Actions</span><span>CI/CD</span><span>Git</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <p class="skill-label">Domain</p>
+            <div class="skill-tags">
+              <span>Product Support</span><span>Data Analysis</span><span>Banking Tech</span><span>CRM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── EXPERIENCE ────────────────────────────────────────── -->
+  <section id="experience" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02 / Experience</span>
+        <h2 class="section-title">Work History</h2>
+      </div>
+
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Product Support I</h3>
+                <p class="timeline-company">InEight · Full-time</p>
+              </div>
+              <span class="timeline-date">Oct 2024 – Present</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Providing product support for enterprise construction project management software.</li>
+              <li>Troubleshooting technical issues and escalating complex cases to engineering teams.</li>
+              <li>Collaborating with cross-functional teams to improve product reliability and user satisfaction.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Product Support</span><span>SaaS</span><span>Troubleshooting</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Junior Executive</h3>
+                <p class="timeline-company">Pan Asia Banking Corporation PLC · Full-time</p>
+              </div>
+              <span class="timeline-date">Apr 2023 – Oct 2024 · Colombo</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Managed banking operations and customer-facing digital services within a fast-paced branch environment.</li>
+              <li>Supported implementation and adoption of internal banking systems and tools.</li>
+              <li>Maintained compliance with regulatory standards while delivering high-quality service.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Banking Systems</span><span>Operations</span><span>Compliance</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Customer Service Representative</h3>
+                <p class="timeline-company">Pan Asia Banking Corporation PLC · Full-time</p>
+              </div>
+              <span class="timeline-date">Oct 2021 – Apr 2023 · Nugegoda</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Handled customer inquiries, account management, and financial transactions daily.</li>
+              <li>Built strong client relationships while resolving issues efficiently and professionally.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Customer Service</span><span>Banking</span><span>CRM</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div>
+                <h3>Global Talent Team Leader</h3>
+                <p class="timeline-company">AIESEC in Sri Lanka · Volunteer</p>
+              </div>
+              <span class="timeline-date">Sep 2023 – Jun 2024 · Colombo</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Led a team responsible for sourcing and placing global talent across international exchange programmes.</li>
+              <li>Coordinated with AIESEC chapters across multiple countries to match candidates with opportunities.</li>
+              <li>Developed leadership, communication, and cross-cultural collaboration skills.</li>
+            </ul>
+            <div class="timeline-tags">
+              <span>Leadership</span><span>Global Talent</span><span>Cross-cultural</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ──────────────────────────────────────────── -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03 / Projects</span>
+        <h2 class="section-title">Selected Work</h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <div class="project-card reveal featured">
+          <div class="project-meta">
+            <span class="project-type">Personal Portfolio</span>
+            <div class="project-links">
+              <a href="https://github.com/zikeyyy" aria-label="GitHub" title="View on GitHub" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+              <a href="https://zikeyyy.github.io/Portfolio_PathumFernando/index.html" aria-label="Live site" title="View live site" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Personal Portfolio Website</h3>
+          <p class="project-desc">
+            A fully custom-built personal portfolio hosted on GitHub Pages. Designed 
+            to showcase professional experience, certifications, and projects. 
+            Built with pure HTML, CSS, and JavaScript — no frameworks required.
+          </p>
+          <div class="project-stack">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type">Cloud / AI</span>
+            <div class="project-links">
+              <a href="https://github.com/zikeyyy" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+            </div>
+          </div>
+          <h3 class="project-title">Azure AI Exploration</h3>
+          <p class="project-desc">
+            Hands-on experiments with Azure Cognitive Services and Azure Machine 
+            Learning — exploring computer vision, natural language processing, 
+            and model deployment on the Azure platform.
+          </p>
+          <div class="project-stack">
+            <span>Microsoft Azure</span><span>Azure AI</span><span>Python</span>
+          </div>
+        </div>
+
+        <div class="project-card reveal">
+          <div class="project-meta">
+            <span class="project-type">DevOps</span>
+            <div class="project-links">
+              <a href="https://github.com/zikeyyy" aria-label="GitHub" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg></a>
+            </div>
+          </div>
+          <h3 class="project-title">CI/CD Pipeline Automation</h3>
+          <p class="project-desc">
+            Built automated build, test, and deployment pipelines using GitHub 
+            Actions — streamlining the software delivery lifecycle for personal 
+            and academic projects.
+          </p>
+          <div class="project-stack">
+            <span>GitHub Actions</span><span>CI/CD</span><span>Git</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ───────────────────────────────────────────── -->
+  <section id="contact" class="section section-alt">
+    <div class="container contact-container">
+      <div class="section-header">
+        <span class="section-tag">04 / Contact</span>
+        <h2 class="section-title">Let's Connect</h2>
+        <p class="section-subtitle">
+          Whether you have a project in mind, a role to fill, or just want 
+          to say hello — my inbox is always open.
+        </p>
+      </div>
+
+      <div class="contact-grid reveal">
+        <div class="contact-info">
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:pathumzk@icloud.com" class="contact-value">pathumzk@icloud.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+94761859239" class="contact-value">+94 76 185 9239</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <p class="contact-value">Kalutara, Western Province, Sri Lanka</p>
+            </div>
+          </div>
+
+          <div class="social-row">
+            <a href="https://github.com/zikeyyy" class="social-link" target="_blank" rel="noopener" title="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.09.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.461-1.11-1.461-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.831.091-.646.349-1.086.635-1.337-2.22-.252-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.03-2.682-.103-.253-.447-1.27.098-2.646 0 0 .84-.269 2.75 1.025A9.578 9.578 0 0 1 12 6.836c.85.004 1.705.114 2.504.336 1.909-1.294 2.747-1.025 2.747-1.025.547 1.376.202 2.394.1 2.646.64.698 1.026 1.591 1.026 2.682 0 3.841-2.337 4.687-4.565 4.934.359.31.678.919.678 1.852 0 1.336-.012 2.415-.012 2.744 0 .267.18.577.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/pathumfernando1" class="social-link" target="_blank" rel="noopener" title="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <form class="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Jane Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="jane@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">
+            <span>Send Message</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+          </button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────── -->
+  <footer>
+    <p>Designed &amp; built by <strong>Pathum Fernando</strong> · <span id="year"></span></p>
+    <p class="footer-sub">Built with HTML &amp; CSS · Hosted on GitHub Pages</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html> 
